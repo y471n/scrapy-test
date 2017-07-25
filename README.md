@@ -8,10 +8,10 @@ The goal of this trial project is to create a spider with Scrapy to scrape produ
 
 ### Product spider ###
 
-The spider should extract information about every product on: http://uk.farnell.com/.
+Create a Python 3.5+ spider to scrape all items in the Electrical, Engineering Software, and Wireless Modules & Adapters categories on http://uk.farnell.com/.
 It should navigate down the product category tree (e.g.: Semiconductors / Memory / DRAM) to the lowest level and parse on a per-product basis.
 
-Some of these fields might not be present in every product in the page.
+If a product does not have information for a specific field, please omit the field.
 
 Fields:
 
@@ -25,7 +25,7 @@ Fields:
 * manufacturer_part: (string) Manufacturer part number
 * tariff_number (string): Tariff code/number
 * origin_country (string): Origin country
-* files: (string list) String array of "Technical Docs" filenames (usually PDF or URL titles)
+* files: (string list) String array of "Technical Docs" titles (usually PDF or URL titles)
 * file_urls: (string list) String array of "Technical Docs" URLs
 * image_urls: (string list) String Array of additional image urls
 * primary_image_url: (string) URL of the main product image
@@ -35,16 +35,14 @@ Fields:
 
 You have been given access to this private repository on bitbucket to deliver the code of this trial.
 
-You will also need to deploy and run your spider in our Scrapy Cloud platform. You can create a Scrapy Cloud free account here: https://dash.scrapinghub.com
-
-Once you are ready for us to review your project please let us know by sending us an email to jobs@scrapinghub.com, be sure to include the link to the Scrapy Cloud project.
+The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  When you are done, run your spider on Scrapy Cloud and send us a link to the job.  Also, please include shub's scrapinghub.yml file (with any sensitive information removed).  You can create a Scrapy Cloud free account here: https://app.scrapinghub.com .  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
 
 
 Please keep the followings points in mind when delivering your code:
 
 1. Commit History. Don’t worry about delivering a clean commit history, do as many commits as you would do while working normally. Please do not squash everything into a single commit, we use the commit history to review the evolution of your work.
-2. Code quality. The final version of your code will be considered finished and production-ready (ideally tested). If that’s not the case please indicate it when you email us back for reviewing.
-3. Spent time report. Please include a file “hours.txt” with the report of the hours you spent working on the project. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc)
+2. Code quality. The final version of your code will be considered finished and production-ready - please make sure the spider results are complete and look correct upon inspection. If that’s not the case please indicate it when you email us back for reviewing.
+3. Spent time report. Please include a file “hours.txt” with a list of tasks you worked on and the durations you worked on them. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc).
 
 ### Time limit ###
 
