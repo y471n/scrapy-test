@@ -35,7 +35,7 @@ Fields:
 
 You have been given access to this private repository on bitbucket to deliver the code of this trial.
 
-The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  When you are done, run your spider on Scrapy Cloud and send us a link to the job.  Also, please include shub's scrapinghub.yml file (with any sensitive information removed).  You can create a Scrapy Cloud free account here: https://app.scrapinghub.com .  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
+The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  Please commit shub's scrapinghub.yml file (with any sensitive information removed).  You should also run your completed spider in the cloud - you can create a Scrapy Cloud free account here: https://app.scrapinghub.com .  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
 
 
 Please keep the followings points in mind when delivering your code:
