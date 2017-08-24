@@ -9,7 +9,7 @@ The goal of this trial project is to create a spider with Scrapy to scrape produ
 ### Product spider ###
 
 Create a Python 3.5+ spider to scrape all items in the Electrical, Engineering Software, and Wireless Modules & Adapters categories on http://uk.farnell.com/.
-It should navigate down the product category tree (e.g.: Semiconductors / Memory / DRAM) to the lowest level and parse on a per-product basis.
+It should navigate down the product category tree (e.g.: Wireless Modules & Adapters / RF Modules / RF Power) to the lowest level and parse on a per-product basis.
 
 If a product does not have information for a specific field, please omit the field.
 
@@ -35,7 +35,7 @@ Fields:
 
 You have been given access to this private repository on bitbucket to deliver the code of this trial.
 
-The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  Please commit shub's scrapinghub.yml file (with any sensitive information removed).  You should also run your completed spider in the cloud - you can create a Scrapy Cloud free account here: https://app.scrapinghub.com .  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
+The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  Please commit shub's scrapinghub.yml file (with any sensitive information removed).  You should also run your completed spider in the cloud - you will receive an email with an invitation to a Scrapy Cloud project for this purpose (if you don't, please let us know).  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
 
 
 Please keep the followings points in mind when delivering your code:
