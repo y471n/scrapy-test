@@ -41,8 +41,9 @@ The spider should be written in Python 3.5+ and follow the PEP8 style guidelines
 Please keep the followings points in mind when delivering your code:
 
 1. Commit History. Don’t worry about delivering a clean commit history, do as many commits as you would do while working normally. Please do not squash everything into a single commit, we use the commit history to review the evolution of your work.
-2. Code quality. The final version of your code will be considered finished and production-ready - please make sure the spider results are complete and look correct upon inspection. If that’s not the case please indicate it when you email us back for reviewing.
-3. Spent time report. Please include a file “hours.txt” with a list of tasks you worked on and the durations you worked on them. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc).
+2. Code quality. The final version of your code will be considered finished and production-ready - please make sure the spider results are complete and look correct upon inspection.
+3. Spent time report. Please include a file "hours.txt" with a list of tasks you worked on and the durations you worked on them. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc).
+4. Assumptions and decisions report.  Please document assumptions you made and reasons for decisions you made in a file called "assumptions.txt" in your repository.  We will refer to this if your code contains things we did not expect.
 
 ### Time limit ###
 
