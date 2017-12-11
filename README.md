@@ -4,32 +4,25 @@
 
 ### Goal ###
 
-The goal of this trial project is to create a spider with Scrapy to scrape product information from a retailer (uk.farnell.com). The specs are detailed below.
+The goal of this trial project is to create a spider with Scrapy to scrape artistic work information from a museum (pstrial-2017-12-09.toscrape.com). The specs are detailed below.
 
 ### Product spider ###
 
-Create a Python 3.5+ spider to scrape all items in the Electrical, Engineering Software, and Wireless Modules & Adapters categories on http://uk.farnell.com/.
-It should navigate down the product category tree (e.g.: Wireless Modules & Adapters / RF Modules / RF Power) to the lowest level and parse on a per-product basis.
+Create a Python 3.5+ spider to scrape all works in the Une Tete and Summertime categories on http://pstrial-2017-12-09.toscrape.com/.
+It should navigate down the work browse tree (e.g.: Summertime / Wrapper From / Barn Owl) to the lowest level and parse on a per-work basis.
 
-If a product does not have information for a specific field, please omit the field.
+If a work does not have information for a specific field, please omit the field.
 
 Fields:
 
-* url: (string) Url of the product being scraped
-* brand: (string) Product Brand Name
-* title (string) Product headline containing the brand and product name
-* unit_price: (float) Unit price of the product
-* overview: (string) Product Overview description, usually has advertising copy
-* information: (string) Dict array of specification objects in {name: specname, value: specvalue}
-* manufacturer: (string) Manufacturer
-* manufacturer_part: (string) Manufacturer part number
-* tariff_number (string): Tariff code/number
-* origin_country (string): Origin country
-* files: (string list) String array of "Technical Docs" titles (usually PDF or URL titles)
-* file_urls: (string list) String array of "Technical Docs" URLs
-* image_urls: (string list) String Array of additional image urls
-* primary_image_url: (string) URL of the main product image
-* trail: (string list) Ordered string array (highest level category first) of categories
+* url: (string) Url of the work being scraped
+* artist: (list of strings) List of artists for the work
+* title: (string) Title of the work
+* image: (string) URL of the image
+* height: (float) Physical height in cm, only if available in cm
+* width: (float) Physical width in cm, only if available in cm
+* description: (string) Description of the work
+* path: (string list) The names of categories visited to reach the item via the browse tree
 
 ### Deliverable ###
 
@@ -47,7 +40,7 @@ Please keep the followings points in mind when delivering your code:
 
 ### Time limit ###
 
-The time limit for this project is 20 working hours, you must deliver the project finished or not when you have spent 20 hours working on in.
+The time limit for this project is 16 working hours, you must deliver the project finished or not when you have spent 16 hours working on in.
 
 ### Deadlines ###
 
