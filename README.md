@@ -4,11 +4,11 @@
 
 ### Goal ###
 
-The goal of this trial project is to create a spider with Scrapy to scrape artistic work information from a museum (pstrial-2017-12-09.toscrape.com). The specs are detailed below.
+The goal of this trial project is to create a spider with Scrapy to scrape artistic work information from a museum (pstrial-2017-12-18.toscrape.com). The specs are detailed below.
 
 ### Product spider ###
 
-Create a Python 3.5+ spider to scrape all works in the Une Tete and Summertime categories on http://pstrial-2017-12-09.toscrape.com/.
+Create a Python 3.5+ spider to scrape all works in the In Sunsh and Summertime categories on http://pstrial-2017-12-18.toscrape.com/.
 It should navigate down the work browse tree (e.g.: Summertime / Wrapper From / Barn Owl) to the lowest level and parse on a per-work basis.
 
 If a work does not have information for a specific field, please omit the field.
