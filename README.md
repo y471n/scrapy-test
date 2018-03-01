@@ -42,7 +42,7 @@ Please keep the followings points in mind when delivering your code:
 
 ### Time limit ###
 
-The time limit for this project is 16 working hours, you must deliver the project finished or not when you have spent 16 hours working on in.
+We expect this project to take around 8-10 hours depending on your level of experience.  We don't want you to over-invest yourself in this project, so if you're still working after spending 16 hours please stop and submit what you've completed.
 
 ### Deadlines ###
 
