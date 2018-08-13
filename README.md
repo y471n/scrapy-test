@@ -4,9 +4,9 @@
 
 ### Goal ###
 
-The goal of this trial project is to create a spider with Scrapy to scrape artistic work information from a museum (pstrial-2017-12-18.toscrape.com). The specs are detailed below.
+The goal of this trial project is to create a spider with Scrapy to scrape artistic work information from a museum website. The specs are detailed below.
 
-**Note:** This spider and the website it scrapes are only for the test and have no commercial value.
+**Note:** The museum website was created for this trial and both it and the spider have no commercial value.
 
 ### Product spider ###
 
