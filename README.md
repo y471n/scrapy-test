@@ -28,17 +28,26 @@ Fields:
 
 ### Deliverable ###
 
-You have been given access to this private repository on bitbucket to deliver the code of this trial.
+* The spider, committed and pushed to this repository
 
-The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  Please commit shub's scrapinghub.yml file (with any sensitive information removed).  You should also run your completed spider in the cloud - you will receive an email with an invitation to a Scrapy Cloud project for this purpose (if you don't, please let us know).  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
+    The spider should be written in Python 3.5+ and follow the PEP8 style guidelines.  Please also commit shub's scrapinghub.yml file (with any sensitive information removed).
 
+    Please keep the followings points in mind when delivering your code:
 
-Please keep the followings points in mind when delivering your code:
+    1. Commit History. Don’t worry about delivering a clean commit history, do as many commits as you would do while working normally. Please do not squash everything into a single commit, we use the commit history to review the evolution of your work.
+    2. Code quality. The final version of your code will be considered finished and production-ready - please make sure the spider results are complete and look correct upon inspection. You can check the [online documentation](https://doc.scrapy.org) to learn about Scrapy's features and best practices.
 
-1. Commit History. Don’t worry about delivering a clean commit history, do as many commits as you would do while working normally. Please do not squash everything into a single commit, we use the commit history to review the evolution of your work.
-2. Code quality. The final version of your code will be considered finished and production-ready - please make sure the spider results are complete and look correct upon inspection. You can check the [online documentation](https://doc.scrapy.org) to learn about Scrapy's features and best practices.
-3. Spent time report. Please include a file "hours.txt" with a list of tasks you worked on and the durations you worked on them. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc). Keep in mind that this is not a time competition, a clean implementation is preferable over a quick one.
-4. Assumptions and decisions report.  Please document assumptions you made and reasons for decisions you made in a file called "assumptions.txt" in your repository.  We will refer to this if your code contains things we did not expect.
+* A complete run of your finished spider in Scrapy Cloud
+
+    You will receive an email with an invitation to a Scrapy Cloud project for this purpose (if you don't, please let us know).  Instructions for deploying with Python 3 can be found here: https://helpdesk.scrapinghub.com/support/solutions/articles/22000200387-deploying-python-3-spiders-to-scrapy-cloud
+
+* Spent time report
+
+    Please include a file "hours.txt" with a list of tasks you worked on and the durations you worked on them. You can be as detailed as you want, but a summary of high-level points is often enough (learning scrapy, spider design, implementation, testing, etc). Keep in mind that this is not a time competition, a clean implementation is preferable over a quick one.
+
+* Assumptions and decisions report
+
+    Please document assumptions you made and reasons for decisions you made in a file called "assumptions.txt" in your repository.  We will refer to this if your code contains things we did not expect.
 
 ### Time limit ###
 
