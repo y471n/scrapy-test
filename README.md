@@ -40,6 +40,27 @@ Additional bonus points may be awarded to those who use [Items](https://doc.scra
 
 Since trial is limited on time it's not a mandatory requirement to use `Items` or `Pipelines`.
 
+#### Running locally
+
+Scrapy allows to [run](https://doc.scrapy.org/en/latest/intro/tutorial.html#how-to-run-our-spider) any spider locally.
+
+More than that you can also [debug](https://doc.scrapy.org/en/latest/topics/commands.html#shell) with Scrapy. 
+It can be really useful if you getting responses different to the ones in browser or like to check selectors 
+created quickly.
+
+#### Running at Scrapy Cloud
+
+This trial requires crawl at Scrapy Cloud as deliverable.
+
+ScrapingHub using own [tool](https://shub.readthedocs.io/en/stable/quickstart.html) to make Scrapy Cloud deployments.
+
+Important steps to make deployment in right way:
+
+* [login](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) to Scrapy Cloud.
+* [set](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) project id so tool would know the target for deployment.
+* run `shub deploy`
+
+
 ### Deliverable ###
 
 * The spider, committed and pushed to this repository
