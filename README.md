@@ -26,6 +26,20 @@ Fields:
 * description: (string) Description of the work
 * path: (string list) The names of categories visited to reach the item via the browse tree. Ex: ["Summertime", "Wrapper From", "Ao Shu"]
 
+### Getting started
+
+Scrapy is an application framework for crawling web sites and extracting structured data. 
+It is a primary library used for data extraction at ScrapingHub. So that's a main reason why trial is focused on Scrapy.
+
+We have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which describes all aspects of Scrapy.
+
+However for this trial you'll need to understand how to create [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider).
+
+Additional bonus points may be awarded to those who use [Items](https://doc.scrapy.org/en/latest/topics/items.html#module-scrapy.item) and [Pipelines](https://doc.scrapy.org/en/latest/topics/item-pipeline.html#item-pipeline) in the trial code. 
+`Items` are used to keep data structured. `Pipelines` allows to run post-processing on the collected data, i.e. drop empty fields, etc.
+
+Since trial is limited on time it's not a mandatory requirement to use `Items` or `Pipelines`.
+
 ### Deliverable ###
 
 * The spider, committed and pushed to this repository
@@ -48,6 +62,10 @@ Fields:
 * Assumptions and decisions report
 
     Please document assumptions you made and reasons for decisions you made in a file called "assumptions.txt" in your repository.  We will refer to this if your code contains things we did not expect.
+
+* Feedback
+    
+    We would appreciate any feedback as per this trial. Please put it to "feedback.txt"
 
 ### Time limit ###
 
