@@ -38,10 +38,6 @@ Using [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-fi
 
 However we have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which provides deeper insight into Scrapy.
 
-Additional bonus points may be awarded to those who use [Items](https://doc.scrapy.org/en/latest/topics/items.html#module-scrapy.item) and [Pipelines](https://doc.scrapy.org/en/latest/topics/item-pipeline.html#item-pipeline) in the trial code. 
-`Items` are used to keep data structured. `Pipelines` allows to run post-processing on the collected data, i.e. drop empty fields, etc.
-
-Since trial is limited on time it's not a mandatory requirement to use `Items` or `Pipelines`.
 
 #### Running locally
 
