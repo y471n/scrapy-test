@@ -31,9 +31,12 @@ Fields:
 Scrapy is an application framework for crawling web sites and extracting structured data. 
 It is a primary library used for data extraction at ScrapingHub. So that's a main reason why trial is focused on Scrapy.
 
-We have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which describes all aspects of Scrapy.
+For this assignment you'll need to modify `artworks/spiders/trial.py`, `assumptions.txt`,
+`feedback.txt` and `hours.txt` files.
 
-However for this trial you'll need to understand how to create [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider).
+Using [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider) should be enough to complete the task.
+
+However we have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which provides deeper insight into Scrapy.
 
 Additional bonus points may be awarded to those who use [Items](https://doc.scrapy.org/en/latest/topics/items.html#module-scrapy.item) and [Pipelines](https://doc.scrapy.org/en/latest/topics/item-pipeline.html#item-pipeline) in the trial code. 
 `Items` are used to keep data structured. `Pipelines` allows to run post-processing on the collected data, i.e. drop empty fields, etc.
@@ -42,11 +45,16 @@ Since trial is limited on time it's not a mandatory requirement to use `Items` o
 
 #### Running locally
 
-Scrapy allows to [run](https://doc.scrapy.org/en/latest/intro/tutorial.html#how-to-run-our-spider) any spider locally.
+1. Scrapy allows to [run](https://doc.scrapy.org/en/latest/intro/tutorial.html#how-to-run-our-spider) any spider locally.
+> scrapy crawl trial 
 
-More than that you can also [debug](https://doc.scrapy.org/en/latest/topics/commands.html#shell) with Scrapy. 
+2. More than that you can also [debug](https://doc.scrapy.org/en/latest/topics/commands.html#shell) with Scrapy. 
 It can be really useful if you getting responses different to the ones in browser or like to check selectors 
 created quickly.
+> $ scrapy shell <url_to_explore>
+>
+> ....  # experiment with response 
+
 
 #### Running at Scrapy Cloud
 
@@ -56,9 +64,19 @@ ScrapingHub using own [tool](https://shub.readthedocs.io/en/stable/quickstart.ht
 
 Important steps to make deployment in right way:
 
-* [login](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) to Scrapy Cloud.
-* [set](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) project id so tool would know the target for deployment.
-* run `shub deploy`
+1. [login](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) to Scrapy Cloud.
+    > shub login
+
+    You'll need to provide your ScrapinghuAPI key on this step. Key can be found at https://app.scrapinghub.com/account/apikey
+2. [set](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) project id so tool would know the target for deployment.
+    
+    `scrapinghub.yml` file needs to be updated with the correct project id.
+    
+    It is coming at the url you received with the invitation to the trial:
+    `https://app.scrapinghub.com/p/<project_id>/`
+3. Run `shub deploy` to load code to Scrapy Cloud (aka SC).
+4. Run `shub schedule trial` to start spider on SC (it is also possible to run spider in UI by hitting `Run` button).
+5. Check your project page `https://app.scrapinghub.com/p/<project_id>/` to see collected data.
 
 
 ### Deliverable ###
