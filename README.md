@@ -26,6 +26,55 @@ Fields:
 * description: (string) Description of the work
 * path: (string list) The names of categories visited to reach the item via the browse tree. Ex: ["Summertime", "Wrapper From", "Ao Shu"]
 
+### Getting started
+
+Scrapy is an application framework for crawling web sites and extracting structured data. 
+It is a primary library used for data extraction at ScrapingHub. So that's a main reason why trial is focused on Scrapy.
+
+For this assignment you'll need to modify `artworks/spiders/trial.py`, `assumptions.txt`,
+`feedback.txt` and `hours.txt` files.
+
+Using [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider) should be enough to complete the task.
+
+However we have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which provides deeper insight into Scrapy.
+
+
+#### Running locally
+
+1. Scrapy allows to [run](https://doc.scrapy.org/en/latest/intro/tutorial.html#how-to-run-our-spider) any spider locally.
+> scrapy crawl trial 
+
+2. More than that you can also [debug](https://doc.scrapy.org/en/latest/topics/commands.html#shell) with Scrapy. 
+It can be really useful if you getting responses different to the ones in browser or like to check selectors 
+created quickly.
+> $ scrapy shell <url_to_explore>
+>
+> ....  # experiment with response 
+
+
+#### Running at Scrapy Cloud
+
+This trial requires crawl at Scrapy Cloud as deliverable.
+
+ScrapingHub using own [tool](https://shub.readthedocs.io/en/stable/quickstart.html) to make Scrapy Cloud deployments.
+
+Important steps to make deployment in right way:
+
+1. [login](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) to Scrapy Cloud.
+    > shub login
+
+    You'll need to provide your ScrapinghuAPI key on this step. Key can be found at https://app.scrapinghub.com/account/apikey
+2. [set](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) project id so tool would know the target for deployment.
+    
+    `scrapinghub.yml` file needs to be updated with the correct project id.
+    
+    It is coming at the url you received with the invitation to the trial:
+    `https://app.scrapinghub.com/p/<project_id>/`
+3. Run `shub deploy` to load code to Scrapy Cloud (aka SC).
+4. Run `shub schedule trial` to start spider on SC (it is also possible to run spider in UI by hitting `Run` button).
+5. Check your project page `https://app.scrapinghub.com/p/<project_id>/` to see collected data.
+
+
 ### Deliverable ###
 
 * The spider, committed and pushed to this repository
@@ -48,6 +97,10 @@ Fields:
 * Assumptions and decisions report
 
     Please document assumptions you made and reasons for decisions you made in a file called "assumptions.txt" in your repository.  We will refer to this if your code contains things we did not expect.
+
+* Feedback
+    
+    We would appreciate any feedback as per this trial. Please put it to "feedback.txt"
 
 ### Time limit ###
 
