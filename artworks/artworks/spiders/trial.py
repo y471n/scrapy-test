@@ -4,13 +4,9 @@ import scrapy
 
 
 class TrialSpider(scrapy.Spider):
-    name = '<spider_name>'
-    start_urls = ['<start_urls>']
+    name = 'trial'
+    start_urls = []  # put your start urls here
 
     def parse(self, response):
         # Put your logic to process artworks directory
-        pass
-
-    def parse_artwork(self, response):
-        # Processing each individual artwork here
         pass
