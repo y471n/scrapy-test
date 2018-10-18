@@ -100,7 +100,7 @@ Important steps to make deployment in right way:
 
 * Feedback
     
-    We would appreciate any feedback as per this trial. Please put it to "feedback.txt"
+    We would appreciate any feedback as per this trial. Please put it to "feedback.txt". Some specific questions are provided, but if you only have one thing to say, we're eager to receive any feedback at all. Please share!
 
 ### Time limit ###
 
