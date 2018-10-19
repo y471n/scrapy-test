@@ -29,50 +29,47 @@ Fields:
 ### Getting started
 
 Scrapy is an application framework for crawling web sites and extracting structured data. 
-It is a primary library used for data extraction at ScrapingHub. So that's a main reason why trial is focused on Scrapy.
+It is the primary library used for data extraction at ScrapingHub, which is the main reason why this trial is focused on Scrapy.
 
-For this assignment you'll need to modify `artworks/spiders/trial.py`, `assumptions.txt`,
+For this assignment you'll need to modify the `artworks/spiders/trial.py`, `assumptions.txt`,
 `feedback.txt` and `hours.txt` files.
 
-Using [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider) should be enough to complete the task.
-
-However we have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which provides deeper insight into Scrapy.
+Using a [basic spider](https://doc.scrapy.org/en/latest/intro/tutorial.html#our-first-spider) should be enough to complete the task.
+However, we also have a comprehensive [tutorial](https://doc.scrapy.org/en/latest/intro/tutorial.html) which provides deeper insight into Scrapy.
 
 
 #### Running locally
 
 1. Scrapy allows to [run](https://doc.scrapy.org/en/latest/intro/tutorial.html#how-to-run-our-spider) any spider locally.
-> scrapy crawl trial 
+   > scrapy crawl trial
 
 2. More than that you can also [debug](https://doc.scrapy.org/en/latest/topics/commands.html#shell) with Scrapy. 
-It can be really useful if you getting responses different to the ones in browser or like to check selectors 
-created quickly.
-> $ scrapy shell <url_to_explore>
->
-> ....  # experiment with response 
+   It can be really useful if you are getting responses different to the ones you see in the browser or would like to check selectors quickly:
+   > $ scrapy shell <url_to_explore>
+   >
+   > \>>> # experiment with response
 
 
-#### Running at Scrapy Cloud
+#### Running at Scrapy Cloud (AKA "SC")
 
-This trial requires crawl at Scrapy Cloud as deliverable.
+This trial requires a crawling job at Scrapy Cloud as deliverable.
 
-ScrapingHub using own [tool](https://shub.readthedocs.io/en/stable/quickstart.html) to make Scrapy Cloud deployments.
+ScrapingHub has its own [command line tool](https://shub.readthedocs.io/en/stable/quickstart.html) to make Scrapy Cloud deployments, called `shub`.
 
-Important steps to make deployment in right way:
+Important steps to make deployments the right way:
 
-1. [login](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) to Scrapy Cloud.
-    > shub login
+1. [Login to Scrapy Cloud](https://shub.readthedocs.io/en/stable/quickstart.html#basic-usage) by executing `shub login`
 
-    You'll need to provide your ScrapinghuAPI key on this step. Key can be found at https://app.scrapinghub.com/account/apikey
-2. [set](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) project id so tool would know the target for deployment.
+    You'll need to provide your Scrapinghub API key on this step. It can be found at https://app.scrapinghub.com/account/apikey
+
+2. [Set the project id](https://shub.readthedocs.io/en/stable/configuration.html#where-to-configure-shub) so _shub_ would know the target for deployment.
     
-    `scrapinghub.yml` file needs to be updated with the correct project id.
-    
-    It is coming at the url you received with the invitation to the trial:
+    `scrapinghub.yml` file needs to be updated with the correct project id. You can take it from the end of the URL you received with the invitation to the trial:
     `https://app.scrapinghub.com/p/<project_id>/`
-3. Run `shub deploy` to load code to Scrapy Cloud (aka SC).
-4. Run `shub schedule trial` to start spider on SC (it is also possible to run spider in UI by hitting `Run` button).
-5. Check your project page `https://app.scrapinghub.com/p/<project_id>/` to see collected data.
+
+3. Run `shub deploy` to load code into Scrapy Cloud.
+4. Run `shub schedule trial` to start a spider job on SC. It is also possible to run the spider in the UI by hitting `Run` button.
+5. Check your project page at `https://app.scrapinghub.com/p/<project_id>/` to see the collected data.
 
 
 ### Deliverable ###
@@ -100,7 +97,7 @@ Important steps to make deployment in right way:
 
 * Feedback
     
-    We would appreciate any feedback as per this trial. Please put it to "feedback.txt". Some specific questions are provided, but if you only have one thing to say, we're eager to receive any feedback at all. Please share!
+    We would appreciate any feedback as per this trial. Please put it into "feedback.txt". Some specific questions are provided, but if you only have one thing to say, we're eager to receive any feedback at all. Please share!
 
 ### Time limit ###
 
